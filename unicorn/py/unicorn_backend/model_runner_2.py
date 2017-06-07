@@ -46,9 +46,9 @@ import validictory
 
 from nupic.algorithms.anomaly_likelihood import AnomalyLikelihood
 from nupic.data import aggregator
-from nupic.data import fieldmeta
+from nupic.data import field_meta
 from nupic.data import record_stream
-from nupic.frameworks.opf.modelfactory import ModelFactory
+from nupic.frameworks.opf.model_factory import ModelFactory
 
 from unicorn_backend.utils import date_time_utils
 from unicorn_backend.utils import na
@@ -207,12 +207,12 @@ class _ModelRunner(object):
 
 
     inputRecordSchema = (
-      fieldmeta.FieldMetaInfo(modelSpec["timestampFieldName"],
-                              fieldmeta.FieldMetaType.datetime,
-                              fieldmeta.FieldMetaSpecial.timestamp),
-      fieldmeta.FieldMetaInfo(modelSpec["valueFieldName"],
-                              fieldmeta.FieldMetaType.float,
-                              fieldmeta.FieldMetaSpecial.none),
+      field_meta.FieldMetaInfo(modelSpec["timestampFieldName"],
+                              field_meta.FieldMetaType.datetime,
+                              field_meta.FieldMetaSpecial.timestamp),
+      field_meta.FieldMetaInfo(modelSpec["valueFieldName"],
+                              field_meta.FieldMetaType.float,
+                              field_meta.FieldMetaSpecial.none),
     )
 
     self._aggregator = aggregator.Aggregator(
