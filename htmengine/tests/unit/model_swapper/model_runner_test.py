@@ -36,7 +36,7 @@ import unittest
 from mock import Mock, patch
 
 
-from nupic.data.fieldmeta import FieldMetaInfo
+from nupic.data.field_meta import FieldMetaInfo
 
 from htmengine.model_checkpoint_mgr import model_checkpoint_mgr
 from htmengine.model_swapper import model_runner

@@ -33,7 +33,7 @@ import traceback
 import unittest
 
 
-from nupic.data.fieldmeta import FieldMetaInfo, FieldMetaSpecial, FieldMetaType
+from nupic.data.field_meta import FieldMetaInfo, FieldMetaSpecial, FieldMetaType
 from nupic.frameworks.opf.common_models.cluster_params import (
   getScalarMetricWithTimeOfDayAnomalyParams)
 

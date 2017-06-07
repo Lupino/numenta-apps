@@ -36,7 +36,7 @@ import time
 import traceback
 
 
-from nupic.data.fieldmeta import FieldMetaInfo
+from nupic.data.field_meta import FieldMetaInfo
 from nupic.data.record_stream import RecordStreamIface
 from nupic.frameworks.opf.model_factory import ModelFactory
 
@@ -824,7 +824,7 @@ class _InputRowEncoder(RecordStreamIface):
 
   def getFields(self):
     """ [ABC method implementation] Returns a sequence of
-    nupic.data.fieldmeta.FieldMetaInfo name/type/special tuples for each field
+    nupic.data.field_meta.FieldMetaInfo name/type/special tuples for each field
     in the stream. Might be None, if that information is provided externally
     (thru stream def, for example).
     """

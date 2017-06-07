@@ -35,7 +35,7 @@ import sys
 import time
 
 
-from nupic.data import fieldmeta
+from nupic.data import field_meta
 from nupic.frameworks.opf.common_models.cluster_params import (
   getScalarMetricWithTimeOfDayAnomalyParams)
 
@@ -109,10 +109,10 @@ def generateSwarmParams(stats, classifierEnabled=False):
   swarmParams["modelConfig"]["modelParams"]["clEnable"] = classifierEnabled
 
   swarmParams["inputRecordSchema"] = (
-    fieldmeta.FieldMetaInfo("c0", fieldmeta.FieldMetaType.datetime,
-                            fieldmeta.FieldMetaSpecial.timestamp),
-    fieldmeta.FieldMetaInfo("c1", fieldmeta.FieldMetaType.float,
-                            fieldmeta.FieldMetaSpecial.none),
+    field_meta.FieldMetaInfo("c0", field_meta.FieldMetaType.datetime,
+                            field_meta.FieldMetaSpecial.timestamp),
+    field_meta.FieldMetaInfo("c1", field_meta.FieldMetaType.float,
+                            field_meta.FieldMetaSpecial.none),
   )
 
   return swarmParams
@@ -159,12 +159,12 @@ def generateSwarmParamsFromCompleteModelParams(modelSpec):
   swarmParams["inferenceArgs"] = completeModelParams["inferenceArgs"]
 
   inputRecordSchema = (
-    fieldmeta.FieldMetaInfo(completeModelParams["timestampFieldName"],
-                            fieldmeta.FieldMetaType.datetime,
-                            fieldmeta.FieldMetaSpecial.timestamp),
-    fieldmeta.FieldMetaInfo(completeModelParams["valueFieldName"],
-                            fieldmeta.FieldMetaType.float,
-                            fieldmeta.FieldMetaSpecial.none),
+    field_meta.FieldMetaInfo(completeModelParams["timestampFieldName"],
+                            field_meta.FieldMetaType.datetime,
+                            field_meta.FieldMetaSpecial.timestamp),
+    field_meta.FieldMetaInfo(completeModelParams["valueFieldName"],
+                            field_meta.FieldMetaType.float,
+                            field_meta.FieldMetaSpecial.none),
   )
   swarmParams["inputRecordSchema"] = inputRecordSchema
 

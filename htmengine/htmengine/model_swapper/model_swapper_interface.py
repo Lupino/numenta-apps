@@ -727,7 +727,7 @@ class ModelSwapperInterface(object):
         ModelFactory.create()
       "inferenceArgs": Model inference arguments suitable for passing to
         model.enableInference()
-      "inputRecordSchema": a sequence  of nupic.data.fieldmeta.FieldMetaInfo
+      "inputRecordSchema": a sequence  of nupic.data.field_meta.FieldMetaInfo
         instances with field names/types/special as expected by the model and in
         the same order as they will appear in input records. This is needed in
         order to avoid the overhead of passing fields names with each and every
