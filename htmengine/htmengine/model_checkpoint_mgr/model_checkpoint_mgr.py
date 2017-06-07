@@ -31,7 +31,7 @@ import shutil
 import tempfile
 import time
 
-from nupic.frameworks.opf.modelfactory import ModelFactory
+from nupic.frameworks.opf.model_factory import ModelFactory
 
 from htmengine import htmengine_logging
 

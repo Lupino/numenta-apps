@@ -45,7 +45,7 @@
       "additionalProperties":false,
       "properties": {
         "modelConfig": {
-          "description": "Complete model config to be passed to nupic.frameworks.opf.modelfactory.ModelFactory.create().",
+          "description": "Complete model config to be passed to nupic.frameworks.opf.model_factory.ModelFactory.create().",
           "type": "object",
           "required": true
         },

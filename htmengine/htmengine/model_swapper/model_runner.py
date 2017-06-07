@@ -38,7 +38,7 @@ import traceback
 
 from nupic.data.fieldmeta import FieldMetaInfo
 from nupic.data.record_stream import RecordStreamIface
-from nupic.frameworks.opf.modelfactory import ModelFactory
+from nupic.frameworks.opf.model_factory import ModelFactory
 
 from nta.utils.error_handling import logExceptions
 from nta.utils.logging_support_raw import LoggingSupport

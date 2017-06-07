@@ -28,7 +28,7 @@ from htmengine.model_checkpoint_mgr.model_checkpoint_mgr import (
     ModelCheckpointMgr, ModelNotFound, ModelAlreadyExists)
 from htmengine.model_checkpoint_mgr.model_checkpoint_test_utils import (
     ModelCheckpointStoragePatch)
-from nupic.frameworks.opf.modelfactory import ModelFactory
+from nupic.frameworks.opf.model_factory import ModelFactory
 
 
 # Disable warning: Access to a protected member
